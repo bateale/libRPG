@@ -3,8 +3,6 @@ package com.rpg.utils;
 import java.util.ArrayList;
 import java.util.Random;
 
-import org.apache.log4j.Logger;
-
 import com.rpg.random.PlayingCard;
 
 public class DeckOfCards {	
