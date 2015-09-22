@@ -14,7 +14,7 @@ public class DiceRoller {
 		return result;
 	}
 
-	public static int multiRoll(Die die, int numberOfTimes) {
+	public static int roll(int numberOfTimes, Die die ) {
 		int result = 0;
 		for (int i = 0; i < numberOfTimes; i++) {
 			result += roll(die);
@@ -24,13 +24,13 @@ public class DiceRoller {
 		return result;
 	}
 
-	public static int rollWithMod(Die die, int modifier) {
+	public static int roll(Die die, int modifier) {
 		int result = die.roll() + modifier;
 		logger.debug("Rolling 1" + die.name() + "+" + modifier + ":" + result);
 		return result;
 	}
 
-	public static int multiRollWithMod(Die die, int numberOfTimes, int modifier) {
+	public static int roll( int numberOfTimes, Die die, int modifier) {
 		int result = 0;
 		for (int i = 0; i < numberOfTimes; i++) {
 			result += roll(die);
